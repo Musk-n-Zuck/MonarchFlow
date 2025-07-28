@@ -7,7 +7,7 @@
   - Verify React Navigation v7 setup and configure app navigation structure
   - _Requirements: 10.1, 10.3_
 
-- [ ] 2. Supabase Backend Infrastructure
+- [x] 2. Supabase Backend Infrastructure
   - Initialize Supabase project and configure local development
   - Create database schema with all required tables (profiles, quests, gates, legions, etc.)
   - Set up Row Level Security policies for data protection
