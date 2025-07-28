@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "MonarchFlow",
-    "slug": "MonarchFlow",
+    "name": "Solo Leveling Productivity",
+    "slug": "solo-leveling-productivity",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "monarchflow",
+    "scheme": "solo-leveling",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {

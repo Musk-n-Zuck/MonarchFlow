@@ -1,26 +1,49 @@
 /**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
+ * Solo Leveling themed colors for light and dark modes
  */
 
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
+const tintColorLight = '#0ea5e9'; // gate blue
+const tintColorDark = '#60a5fa'; // lighter gate blue
 
 export const Colors = {
   light: {
-    text: '#11181C',
-    background: '#fff',
+    text: '#0f172a', // shadow-900
+    background: '#ffffff',
     tint: tintColorLight,
-    icon: '#687076',
-    tabIconDefault: '#687076',
+    icon: '#64748b', // shadow-500
+    tabIconDefault: '#94a3b8', // shadow-400
     tabIconSelected: tintColorLight,
+    
+    // Solo Leveling specific colors
+    essence: '#d97706', // essence-600
+    mana: '#3b82f6', // mana-500
+    gate: '#0ea5e9', // gate-500
+    shadow: '#334155', // shadow-700
+    
+    // UI elements
+    card: '#f8fafc', // shadow-50
+    border: '#e2e8f0', // shadow-200
+    input: '#ffffff',
+    placeholder: '#94a3b8', // shadow-400
   },
   dark: {
-    text: '#ECEDEE',
-    background: '#151718',
+    text: '#f1f5f9', // shadow-100
+    background: '#0f172a', // shadow-900
     tint: tintColorDark,
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
+    icon: '#94a3b8', // shadow-400
+    tabIconDefault: '#64748b', // shadow-500
     tabIconSelected: tintColorDark,
+    
+    // Solo Leveling specific colors
+    essence: '#fbbf24', // essence-400
+    mana: '#60a5fa', // mana-400
+    gate: '#38bdf8', // gate-400
+    shadow: '#cbd5e1', // shadow-300
+    
+    // UI elements
+    card: '#1e293b', // shadow-800
+    border: '#334155', // shadow-700
+    input: '#334155', // shadow-700
+    placeholder: '#64748b', // shadow-500
   },
 };
