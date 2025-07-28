@@ -10,6 +10,7 @@
     "web": "expo start --web",
     "lint": "expo lint",
     "test:supabase": "node ./scripts/test-supabase.js",
+    "test:api-keys": "node ./scripts/test-api-key-management.js",
     "setup:supabase": "node ./scripts/setup-hosted-supabase.js",
     "db:reset": "bunx supabase db reset",
     "db:start": "bunx supabase start",

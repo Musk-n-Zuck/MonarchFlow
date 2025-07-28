@@ -197,7 +197,7 @@ export default function AwakeningOnboarding({ onComplete }: AwakeningOnboardingP
             </Text>
 
             {/* Toggle for returning users */}
-            <View className="flex-row items-center justify-center space-x-4">
+            <View className="flex-row items-center justify-center gap-x-4">
               <TouchableOpacity
                 onPress={() => setIsSignInMode(false)}
                 className={`px-4 py-2 rounded-lg ${!isSignInMode ? 'bg-essence-600' : 'bg-shadow-800'
