@@ -37,7 +37,7 @@ export default function TabLayout() {
         name="legions"
         options={{
           title: 'Legions',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="person.3.fill" color={color} />,
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="person.fill" color={color} />,
         }}
       />
       <Tabs.Screen

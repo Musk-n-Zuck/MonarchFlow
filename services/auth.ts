@@ -5,8 +5,29 @@ import { auth, supabase } from './supabase';
 export const authService = {
   // Sign up with Hunter profile creation
   signUp: async (email: string, password: string, hunterData: { hunter_name: string; hunter_class: string }) => {
-    const { data, error } = await auth.signUp(email, password, hunterData);
-    return { data, error };
+    try {
+      const { data, error } = await auth.signUp(email, password, hunterData);
+      
+      if (error) {
+        return { data: null, error };
+      }
+
+      // The profile will be created automatically via database trigger
+      // Wait a moment for the trigger to complete
+      if (data.user && !data.user.email_confirmed_at) {
+        // For development, we might have email confirmation disabled
+        // The profile should be created immediately via trigger
+        await new Promise(resolve => setTimeout(resolve, 100));
+      }
+
+      return { data, error: null };
+    } catch (err) {
+      console.error('Signup error:', err);
+      return { 
+        data: null, 
+        error: { message: 'An unexpected error occurred during signup' } 
+      };
+    }
   },
 
   // Sign in

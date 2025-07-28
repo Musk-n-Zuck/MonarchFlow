@@ -14,7 +14,7 @@
   - Configure Supabase Auth with custom profile creation
   - _Requirements: 1.4, 9.2, 10.3, 10.4_
 
-- [ ] 3. Authentication and Onboarding Flow
+- [x] 3. Authentication and Onboarding Flow
   - Implement Awakening Onboarding component with multi-step flow
   - Create ClassSelector component for Hunter class selection
   - Build ManaStatePicker for mood selection interface

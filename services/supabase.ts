@@ -122,7 +122,7 @@ export const db = {
     subscribeToGatePresence: (gateId: string, callback: (payload: any) => void) => 
       supabase
         .channel(`gate_${gateId}`)
-        .on('presence', { event: '*' }, callback)
+        .on('broadcast', { event: 'presence' }, callback)
         .subscribe(),
   },
 };
